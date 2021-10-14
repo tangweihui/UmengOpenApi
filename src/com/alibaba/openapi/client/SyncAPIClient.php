@@ -116,8 +116,6 @@ class SyncAPIClient
             $urlResult = "/openapi";
         }
 
-        $apiName = Str::afterLast($request->apiId->name, '.');
-
         $defs = array(
                 $urlResult,
                 "/",
@@ -127,9 +125,7 @@ class SyncAPIClient
                 "/",
                 $request->apiId->namespace,
                 "/",
-                Str::beforeLast($request->apiId->name, '.'),
-                ".",
-                Str::startsWith($apiName, 'event') ? Str::replace('_', '.', Str::snake($apiName)) : $apiName,
+                $request->apiId->path,
                 "/",
                 $clientPolicy->appKey
         );
@@ -142,8 +138,6 @@ class SyncAPIClient
     {
         $urlResult = "";
 
-        $apiName = Str::afterLast($request->apiId->name, '.');
-
         $defs = array(
                 $urlResult,
                 $requestPolicy->requestProtocol,
@@ -152,9 +146,7 @@ class SyncAPIClient
                 "/",
                 $request->apiId->namespace,
                 "/",
-                Str::beforeLast($request->apiId->name, '.'),
-                ".",
-                Str::startsWith($apiName, 'event') ? Str::replace('_', '.', Str::snake($apiName)) : $apiName,
+                $request->apiId->path,
                 "/",
                 $clientPolicy->appKey
         );

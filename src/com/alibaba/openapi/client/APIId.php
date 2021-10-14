@@ -21,10 +21,16 @@ class APIId
      * @var integer
      */
     public $version;
-    public function __construct($namespace, $name, $version)
+    /**
+     *  path of API,required
+     * @var string
+     */
+    public $path;
+    public function __construct($namespace, $name, $version, $path)
     {
         $this->namespace = $namespace;
         $this->name = $name;
         $this->version = $version;
+        $this->path = $path;
     }
 }

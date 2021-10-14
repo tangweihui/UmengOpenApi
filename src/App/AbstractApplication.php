@@ -141,11 +141,16 @@ abstract class AbstractApplication
      */
     public function api(string $name, string $httpMethod = 'POST'): self
     {
-        $this->apiName = lcfirst($name);
+        $apiName = explode('.', $name);
+        array_walk($apiName, function (&$item) {
+            $item = ucfirst($item);
+        });
+
+        $this->apiName = lcfirst(implode($apiName));
         $this->setRequestConig('httpMethod', $httpMethod);
         $this->paramObject = $this->getParamObject();
         $this->resultObject = $this->getResultObject();
-        $this->apiId = new APIId($this->getOriginApiNamespace(), $this->getOriginApiName($this->apiName), $this->version);
+        $this->apiId = new APIId($this->getOriginApiNamespace(), $this->getOriginApiName($this->apiName), $this->version, $this->getOriginApiName($name));
         return $this;
     }
 
