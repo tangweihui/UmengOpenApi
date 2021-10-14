@@ -39,7 +39,7 @@ $app->get('getShareOverview', [
 
 ## 项目缘由
 
-友盟官方的sdk, 在已有的composer项目中,用起来很不方便, 所以封装一个用.
+友盟官方sdk在调用部分接口时有bug
 
 ## 贡献
 
