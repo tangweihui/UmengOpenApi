@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Twh\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappVersionInfo;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Twh\UmengOpenAPI\com\umeng\uapp\param\UmengUappVersionInfo;
 
 class UmengUappGetVersionDataResult
 {

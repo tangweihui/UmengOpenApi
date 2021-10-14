@@ -1,11 +1,12 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client;
+namespace Twh\UmengOpenAPI\com\alibaba\openapi\client;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize\SerializerProvider;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util\SignatureUtil;
+use Illuminate\Support\Str;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\serialize\SerializerProvider;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\util\SignatureUtil;
 
 class SyncAPIClient
 {
@@ -115,6 +116,8 @@ class SyncAPIClient
             $urlResult = "/openapi";
         }
 
+        $apiName = Str::afterLast($request->apiId->name, '.');
+
         $defs = array(
                 $urlResult,
                 "/",
@@ -124,7 +127,9 @@ class SyncAPIClient
                 "/",
                 $request->apiId->namespace,
                 "/",
-                $request->apiId->name,
+                Str::beforeLast($request->apiId->name, '.'),
+                ".",
+                Str::startsWith($apiName, 'event') ? Str::replace('_', '.', Str::snake($apiName)) : $apiName,
                 "/",
                 $clientPolicy->appKey
         );
@@ -136,6 +141,9 @@ class SyncAPIClient
     private function generateAPIPath(APIRequest $request, RequestPolicy $requestPolicy, ClientPolicy $clientPolicy)
     {
         $urlResult = "";
+
+        $apiName = Str::afterLast($request->apiId->name, '.');
+
         $defs = array(
                 $urlResult,
                 $requestPolicy->requestProtocol,
@@ -144,7 +152,9 @@ class SyncAPIClient
                 "/",
                 $request->apiId->namespace,
                 "/",
-                $request->apiId->name,
+                Str::beforeLast($request->apiId->name, '.'),
+                ".",
+                Str::startsWith($apiName, 'event') ? Str::replace('_', '.', Str::snake($apiName)) : $apiName,
                 "/",
                 $clientPolicy->appKey
         );

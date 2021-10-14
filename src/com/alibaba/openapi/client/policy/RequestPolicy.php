@@ -1,5 +1,5 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy;
+namespace Twh\UmengOpenAPI\com\alibaba\openapi\client\policy;
 
 class RequestPolicy
 {

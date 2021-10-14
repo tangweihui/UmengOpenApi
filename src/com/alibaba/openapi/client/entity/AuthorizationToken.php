@@ -1,5 +1,5 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity;
+namespace Twh\UmengOpenAPI\com\alibaba\openapi\client\entity;
 
 class AuthorizationToken
 {

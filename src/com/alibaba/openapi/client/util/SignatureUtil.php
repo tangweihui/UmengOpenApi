@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util;
+namespace Twh\UmengOpenAPI\com\alibaba\openapi\client\util;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
 
 class SignatureUtil
 {

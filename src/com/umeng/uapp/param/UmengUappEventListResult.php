@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Twh\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappEventInfo;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Twh\UmengOpenAPI\com\umeng\uapp\param\UmengUappEventInfo;
 
 class UmengUappEventListResult
 {

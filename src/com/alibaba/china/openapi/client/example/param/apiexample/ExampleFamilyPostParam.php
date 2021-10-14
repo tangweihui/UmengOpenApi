@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
+namespace Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamily;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamily;
 
 class ExampleFamilyPostParam
 {

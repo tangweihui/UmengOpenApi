@@ -1,22 +1,22 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example;
+namespace Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\APIId;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\APIRequest;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\APIResponse;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\SyncAPIClient;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\AuthorizationToken;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ParentResult;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ResponseStatus;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ResponseWrapper;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\APIId;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\APIRequest;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\APIResponse;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\SyncAPIClient;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\AuthorizationToken;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ParentResult;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ResponseStatus;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ResponseWrapper;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
 
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetParam;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostParam;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetResult;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostResult;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetParam;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostParam;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetResult;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostResult;
 
 class ExampleFacade
 {

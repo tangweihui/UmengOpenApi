@@ -1,11 +1,11 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
+namespace Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExamplePerson;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleCar;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleHouse;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExamplePerson;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleCar;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleHouse;
 
 class ExampleFamily extends SDKDomain
 {

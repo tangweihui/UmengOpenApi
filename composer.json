@@ -1,14 +1,14 @@
 {
-    "name": "roiwk/umeng-open-api",
-    "description": "Umeng OpenAPI,官方sdk封装.",
+    "name": "twh/umeng-open-api",
+    "description": "Umeng OpenAPI, php官方sdk封装并修改.",
     "keywords": [
         "umeng", "Open API", "友盟", "sdk", "analytics", "分析", "统计"
     ],
     "license": "MIT",
     "authors": [
         {
-            "name": "roiwk",
-            "email": "changewker@foxmail.com"
+            "name": "twh",
+            "email": "784864408@qq.com"
         }
     ],
     "minimum-stability": "stable",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Roiwk\\UmengOpenAPI\\": "src/"
+            "Twh\\UmengOpenAPI\\": "src/"
         }
     }
 

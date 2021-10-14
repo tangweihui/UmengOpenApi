@@ -8,7 +8,7 @@
 ## 安装
 
 ```shell
-composer require roiwk/umeng-open-api
+composer require Twh/umeng-open-api
 ```
 
 ## 快速使用
@@ -17,7 +17,7 @@ composer require roiwk/umeng-open-api
 [此示例的umeng文档](https://developer.umeng.com/open-api/docs/com.umeng.umini/umeng.umini.getTotalUser/1)
 
 ```php
-use Roiwk\UmengOpenAPI\Factory;
+use Twh\UmengOpenAPI\Factory;
 
 $app = Factory::umini([
     'api_key'       => 'your key',

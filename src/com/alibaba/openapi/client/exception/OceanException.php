@@ -1,5 +1,5 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\exception;
+namespace Twh\UmengOpenAPI\com\alibaba\openapi\client\exception;
 
 use RuntimeException;
 

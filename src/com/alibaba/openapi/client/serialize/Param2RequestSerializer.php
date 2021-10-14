@@ -1,13 +1,13 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize;
+namespace Twh\UmengOpenAPI\com\alibaba\openapi\client\serialize;
 
 use DateTime;
 use ReflectionObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util\SDKDomainUtil;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\util\SDKDomainUtil;
 
 class Param2RequestSerializer implements Serializer
 {

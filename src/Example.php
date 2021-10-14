@@ -1,16 +1,16 @@
 <?php
-namespace Roiwk\UmengOpenAPI;
+namespace Twh\UmengOpenAPI;
 
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\ExampleFacade;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamily;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetParam;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostParam;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetResult;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostResult;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExamplePerson;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\exception\OceanException;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\ExampleFacade;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamily;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetParam;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostParam;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyGetResult;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamilyPostResult;
+use Twh\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExamplePerson;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\exception\OceanException;
+use Twh\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
 
 $exampleFacade = new ExampleFacade ();
 $exampleFacade->setAppKey ( "Your appKey" );

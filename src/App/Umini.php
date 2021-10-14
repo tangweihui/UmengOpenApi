@@ -1,6 +1,6 @@
 <?php
 
-namespace Roiwk\UmengOpenAPI\App;
+namespace Twh\UmengOpenAPI\App;
 
 
 class Umini extends AbstractApplication
@@ -19,14 +19,14 @@ class Umini extends AbstractApplication
     protected function getParamObject()
     {
         $apiName = ucfirst($this->apiName);
-        $className = "\\Roiwk\\UmengOpenAPI\\com\\umeng\\umini\\param\\UmengUmini{$apiName}Param";
+        $className = "\\Twh\\UmengOpenAPI\\com\\umeng\\umini\\param\\UmengUmini{$apiName}Param";
         return new $className();
     }
 
     protected function getResultObject()
     {
         $apiName = ucfirst($this->apiName);
-        $className = "\\Roiwk\\UmengOpenAPI\\com\\umeng\\umini\\param\\UmengUmini{$apiName}Result";
+        $className = "\\Twh\\UmengOpenAPI\\com\\umeng\\umini\\param\\UmengUmini{$apiName}Result";
         return new $className();
     }
 
